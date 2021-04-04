@@ -1,14 +1,7 @@
-package com.github.madinaakhmedova.hello_world;
+package com.github.madinaakhmedova.exercise_3;
 
 public class Main {
     public static void main(String[] args) {
-        // Exercise 1
-        System.out.println("Hello world!!!");
-
-        // Exercise 2
-        double var1 = 337.32;
-        byte var2 = -128;
-
         // Exercise 3
         int[] ar = {1, 2, 3, 4, 5};
         int v = ar[0];
