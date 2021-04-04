@@ -7,6 +7,6 @@ public class Main {
         int v = ar[0];
         ar[0] = ar[4];
         ar[4] = v;
-        System.out.println(ar[0] + ar[4]);
+        System.out.println(ar[0] + ar[2]);
     }
 }
