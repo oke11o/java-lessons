@@ -23,6 +23,10 @@ public class Main {
                 System.out.printf("Ответ: %f\n", x * y);
                 break;
             case "/":
+                if (y == 0) {
+                    System.out.println("На ноль нельзя");
+                    return;
+                }
                 System.out.printf("Ответ: %f\n", x / y);
                 break;
             default:

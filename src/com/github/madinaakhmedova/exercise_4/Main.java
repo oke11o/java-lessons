@@ -12,10 +12,10 @@ public class Main {
         System.out.println("Введите число z:");
         float z = scanner.nextFloat();
 
-        float avg = (x+y+z)/3;
-        System.out.printf("Среднее арифметическое: %f\n",avg);
+        float avg = (x + y + z) / 3;
+        System.out.printf("Среднее арифметическое: %f\n", avg);
 
-        int a = (int)(avg/2);
+        int a = (int) (avg / 2);
         if (a > 3) {
             System.out.println("Программа выполнена корректно");
         }
