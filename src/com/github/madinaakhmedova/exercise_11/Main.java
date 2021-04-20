@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите первое число");
-        String vStr = scanner.next();
+        String vStr = scanner.nextLine();
         System.out.println("Введите второе число");
         Integer v2 = scanner.nextInt();
 
