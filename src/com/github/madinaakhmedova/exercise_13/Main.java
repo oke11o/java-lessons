@@ -2,7 +2,7 @@ package com.github.madinaakhmedova.exercise_13;
 
 import java.util.Scanner;
 
-// Не учитываю знаки припинания. Цифры тоже не учитываю. По заданию сказано, только латинские буквы?
+// Не учитываю знаки припинания. Цифры тоже не учитываю. По заданию сказано, только латинские буквы
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

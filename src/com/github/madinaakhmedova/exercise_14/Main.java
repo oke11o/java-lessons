@@ -33,7 +33,7 @@ public class Main {
 
     public static double maxModulo(double min, double max) {
         if (min > 0) {
-            return max; //Если минимальное больше 0, то и максимальное больше 0?
+            return max; //Если минимальное больше 0, то и максимальное больше 0
         }
         min *= -1;
         if (max < 0) {
