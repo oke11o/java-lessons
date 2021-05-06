@@ -43,10 +43,12 @@ public class Main {
         }
 
         if (sign == '+') {
-            return calc(right, y, '-');
+            sign = '-';
+        } else {
+            sign = '+';
         }
 
-        return calc(right, y, '+');
+        return calc(right, y, sign);
     }
 
     public static int calc(int x, int y, char sign) {
