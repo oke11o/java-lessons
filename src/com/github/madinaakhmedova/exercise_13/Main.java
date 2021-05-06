@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Введите строку, например, I love java 8 Я люблю java 14 core1. А я найду все слова латиницей и скажу сколько их");
+        System.out.println("Введите строку, например, I  love   java 8 Я люблю java 14 core1. А я найду все слова латиницей и скажу сколько их");
         String vStr = scanner.nextLine();
 
         String[] words = vStr.split(" ");
@@ -21,10 +21,13 @@ public class Main {
     }
 
     private static boolean isLatin(String word) {
-        for (char ch: word.toCharArray()) {
+        if (word.length() == 0) {
+            return false;
+        }
+        for (char ch : word.toCharArray()) {
             ch = Character.toLowerCase(ch);
             int ascii = ch;
-            if (ascii < 97  || ascii > 122) {
+            if (ascii < 97 || ascii > 122) {
                 return false;
             }
         }
