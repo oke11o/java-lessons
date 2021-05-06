@@ -5,17 +5,18 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Введите первое число");
-        String vStr = scanner.nextLine();
-        System.out.println("Введите второе число");
-        Integer v2 = scanner.nextInt();
+        System.out.println("Введите первое число (можно с точкой)");
+        String sVal = scanner.nextLine();
+        System.out.println("Введите второе число (целое");
+        int iVal = scanner.nextInt();
 
-        int v1 = Integer.parseInt(vStr);
-        boolean equals = v2.equals(v1);
+        Double val1 = (double) iVal;
+        double val2 = Double.parseDouble(sVal);
+        boolean equals = val1.equals(val2);
         System.out.println(equals);
         if (!equals) {
-            int v = Math.min(v1, v2);
-            System.out.println((float) v);
+            double v = Math.min(val2, iVal);
+            System.out.println(v);
         } else {
             System.out.println("Числа равны");
         }
